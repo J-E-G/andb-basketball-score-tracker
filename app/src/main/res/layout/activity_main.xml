@@ -112,13 +112,23 @@
 
                 android:textColor="@color/transparent_white"
                 android:textSize="15sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#b73e0a"
+                android:onClick="resetScore"
+                android:text="@string/reset_button"
+                android:textColor="@color/transparent_white"
+                android:textSize="15sp" />
         </LinearLayout>
 
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="95dp"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="95dp"
             android:background="#b73e0a" />
 
         <LinearLayout
@@ -188,37 +198,18 @@
                 android:text="@string/add_free_throw_button"
                 android:textColor="@color/transparent_white"
                 android:textSize="15sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#b73e0a"
+                android:onClick="gameOver"
+                android:text="@string/game_over_button"
+                android:textColor="@color/transparent_white"
+                android:textSize="15sp" />
         </LinearLayout>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#b73e0a"
-            android:onClick="resetScore"
-            android:text="@string/reset_button"
-            android:textColor="@color/transparent_white"
-            android:textSize="15sp" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:background="#b73e0a"
-            android:onClick="gameOver"
-            android:text="@string/game_over_button"
-            android:textColor="@color/transparent_white"
-            android:textSize="15sp" />
     </LinearLayout>
 
 </RelativeLayout>
