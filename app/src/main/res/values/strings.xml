@@ -12,4 +12,8 @@
     <string name="reset_button">Reset</string>
     <string name="game_over_button">Game Over</string>
     <string name="win_lose_message" />
+    <string name="draw_msg">"DRAW"</string>
+    <string name="win_msg">WINNER!</string>
+    <string name="lose_msg">LOSER!</string>
+    <string name="reset_score" />
 </resources>
