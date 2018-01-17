@@ -86,8 +86,8 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
                 android:onClick="addThreePointsForTeamOne"
                 android:text="@string/add_3_points_button"
                 android:textColor="@color/transparent_white"
@@ -95,8 +95,8 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
                 android:onClick="addTwoPointsForTeamOne"
                 android:text="@string/add_2_points_button"
 
@@ -105,8 +105,8 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
                 android:onClick="addOnePointForTeamOne"
                 android:text="@string/add_free_throw_button"
 
@@ -164,8 +164,8 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
                 android:onClick="addThreePointsForTeamTwo"
                 android:text="@string/add_3_points_button"
                 android:textColor="@color/transparent_white"
@@ -173,8 +173,8 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
                 android:onClick="addTwoPointsForTeamTwo"
                 android:text="@string/add_2_points_button"
                 android:textColor="@color/transparent_white"
@@ -182,8 +182,8 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
                 android:onClick="addOnePointForTeamTwo"
                 android:text="@string/add_free_throw_button"
                 android:textColor="@color/transparent_white"
@@ -200,7 +200,7 @@
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:background="#b73e0a"
@@ -211,7 +211,7 @@
 
         <Button
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="20dp"
             android:layout_weight="1"
             android:background="#b73e0a"
