@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Basketball ScoreTracker</string>
+    <string name="team_one_name">Team Froyo</string>
+    <string name="team_one_score">0</string>
+    <string name="add_3_points_button">+ 3 Points</string>
+    <string name="add_2_points_button">+ 2 Points</string>
+    <string name="add_free_throw_button">Free Throw</string>
+    <string name="score_tracker">Score Tracker</string>
+    <string name="game_name">Basketball</string>
+    <string name="team_two_name">Team Oreo</string>
+    <string name="team_two_score">0</string>
+    <string name="reset_button">Reset</string>
+    <string name="game_over_button">Game Over</string>
+    <string name="win_lose_message" />
+</resources>
