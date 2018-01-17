@@ -10,8 +10,3 @@ Grow With Google Challenge (Udacity) - Android Basics Project 2
 * Removed action bar and replaced with LinearLayout containing two Text Views for header
 * Added Image Views to show team picture
 
-#### TODO
-* Refactor methods for updating views
-* Refactor score calculation method
-* Fix issue with landscape mode
-* Disable point buttons after game over has been pressed (until reset is pressed)
