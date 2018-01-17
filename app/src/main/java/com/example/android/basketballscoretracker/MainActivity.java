@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Display the score for Team One
     public void displayForTeamOne(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_one_score);
+        TextView scoreView = findViewById(R.id.team_one_score);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Display the score for Team Two
     public void displayForTeamTwo(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_two_score);
+        TextView scoreView = findViewById(R.id.team_two_score);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -76,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
 
     // Display Win/Loss message for Team One
     public void displayWinnerForTeamOne(String message) {
-        TextView winnerView = (TextView) findViewById(R.id.team_one_win_lose_msg);
+        TextView winnerView = findViewById(R.id.team_one_win_lose_msg);
         winnerView.setText(message);
     }
 
     // Display Win/Loss message for Team Two
     public void displayWinnerForTeamTwo(String message) {
-        TextView winnerView = (TextView) findViewById(R.id.team_two_win_lose_msg);
+        TextView winnerView = findViewById(R.id.team_two_win_lose_msg);
         winnerView.setText(message);
     }
 
