@@ -1,7 +1,9 @@
 # andb-basketball-score-tracker
 Grow With Google Challenge (Udacity) - Android Basics Project 2
 
-<img src="https://user-images.githubusercontent.com/33797772/35046779-9db2cffc-fb5d-11e7-91ac-16adb927cf45.png"  align="left" height="600" width="325">
+#### Goal: Create an app that tracks the score for two teams in a game or sport.
+
+<img src="https://user-images.githubusercontent.com/33797772/35046779-9db2cffc-fb5d-11e7-91ac-16adb927cf45.png" height="600" width="325">
 
 #### Additional Functionality
 * Added new button for user to indicate that game has ended
