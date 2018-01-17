@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Reset score for both teams
     public void resetScore(View v) {
-        displayWinnerForTeamOne("");
-        displayWinnerForTeamTwo("");
+        displayWinnerForTeamOne(getString(R.string.reset_score));
+        displayWinnerForTeamTwo(getString(R.string.reset_score));
         scoreTeamOne = 0;
         scoreTeamTwo = 0;
         displayForTeamOne(scoreTeamOne);
@@ -88,14 +88,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void gameOver(View v) {
         if (scoreTeamOne > scoreTeamTwo) {
-            displayWinnerForTeamOne("WINNER!");
-            displayWinnerForTeamTwo("LOSER!");
+            displayWinnerForTeamOne(getString(R.string.win_msg));
+            displayWinnerForTeamTwo(getString(R.string.lose_msg));
         } else if (scoreTeamTwo > scoreTeamOne) {
-            displayWinnerForTeamOne("LOSER!");
-            displayWinnerForTeamTwo("WINNER!");
+            displayWinnerForTeamOne(getString(R.string.lose_msg));
+            displayWinnerForTeamTwo(getString(R.string.win_msg));
         } else if (scoreTeamOne == scoreTeamTwo) {
-            displayWinnerForTeamOne("DRAW");
-            displayWinnerForTeamTwo("DRAW");
+            displayWinnerForTeamOne(getString(R.string.draw_msg));
+            displayWinnerForTeamTwo(getString(R.string.draw_msg));
         }
     }
 }
