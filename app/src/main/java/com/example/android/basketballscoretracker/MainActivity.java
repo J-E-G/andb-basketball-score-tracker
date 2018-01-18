@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    // Initialize global key/value pairs for save and restore states
+    public static final String KEY_TEAM_ONE_SCORE = "KEY_TEAM_ONE_SCORE";
+    public static final String KEY_TEAM_TWO_SCORE = "KEY_TEAM_TWO_SCORE";
+    public static final String KEY_TEAM_ONE_GAME_OVER_MSG = "KEY_TEAM_ONE_GAME_OVER_MSG";
+    public static final String KEY_TEAM_TWO_GAME_OVER_MSG = "KEY_TEAM_TWO_GAME_OVER_MSG";
 
     int scoreTeamOne = 0;
     int scoreTeamTwo = 0;
@@ -15,6 +20,52 @@ public class MainActivity extends AppCompatActivity {
     TextView teamTwoScoreView;
     TextView teamOneGameOverMsg;
     TextView teamTwoGameOverMsg;
+
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        // Assign the values of the saved data to local variables for onRestoreInstanceState
+        String team_one_score = savedInstanceState.getString(KEY_TEAM_ONE_SCORE);
+        String team_two_score = savedInstanceState.getString(KEY_TEAM_TWO_SCORE);
+        String team_one_game_over_msg = savedInstanceState.getString(KEY_TEAM_ONE_GAME_OVER_MSG);
+        String team_two_game_over_msg = savedInstanceState.getString(KEY_TEAM_TWO_GAME_OVER_MSG);
+
+
+        if (savedInstanceState != null) {
+            teamOneScoreView.setText(team_one_score); // Update Team One Score View
+            teamTwoScoreView.setText(team_two_score); // Update Team Two Score View
+            teamOneGameOverMsg.setText(team_one_game_over_msg); // Update Team One Game Over Msg
+            teamTwoGameOverMsg.setText(team_two_game_over_msg); // Update Team Two Game OVer Msg
+
+            /* Set Int values to prevent score reset on new point button press after restore */
+            scoreTeamOne = Integer.parseInt(team_one_score); // Set int value for Team One Score
+            scoreTeamTwo = Integer.parseInt(team_two_score); // Set Int value for Team Two Score
+        }
+
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        // Retrieve and Save the value of Team One Score View
+        String team_one_saved_score = teamOneScoreView.getText().toString();
+        outState.putString(KEY_TEAM_ONE_SCORE, team_one_saved_score);
+
+        // Retrieve and Save the value of Team Two Score View
+        String team_two_saved_score = teamTwoScoreView.getText().toString();
+        outState.putString(KEY_TEAM_TWO_SCORE, team_two_saved_score);
+
+        // Retrieve and Save the value of Team One Game Over Msg
+        String team_one_saved_game_over_msg = teamOneGameOverMsg.getText().toString();
+        outState.putString(KEY_TEAM_ONE_GAME_OVER_MSG, team_one_saved_game_over_msg);
+
+        // Retrieve and Save the value of Team Two Game Over Msg
+        String team_two_saved_game_over_msg = teamTwoGameOverMsg.getText().toString();
+        outState.putString(KEY_TEAM_TWO_GAME_OVER_MSG, team_two_saved_game_over_msg);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
