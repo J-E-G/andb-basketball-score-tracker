@@ -10,16 +10,27 @@ public class MainActivity extends AppCompatActivity {
     int scoreTeamOne = 0;
     int scoreTeamTwo = 0;
 
+    // Initialize variables for findViewById method
+    TextView teamOneScoreView;
+    TextView teamTwoScoreView;
+    TextView teamOneGameOverMsg;
+    TextView teamTwoGameOverMsg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Assign variables for findViewById
+        teamOneScoreView = findViewById(R.id.team_one_score);
+        teamTwoScoreView = findViewById(R.id.team_two_score);
+        teamOneGameOverMsg = findViewById(R.id.team_one_win_lose_msg);
+        teamTwoGameOverMsg = findViewById(R.id.team_two_win_lose_msg);
     }
 
     // Display the score for Team One
     public void displayForTeamOne(int score) {
-        TextView scoreView = findViewById(R.id.team_one_score);
-        scoreView.setText(String.valueOf(score));
+        teamOneScoreView.setText(String.valueOf(score));
     }
 
     // Add 3 Points for Team One
@@ -42,8 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Display the score for Team Two
     public void displayForTeamTwo(int score) {
-        TextView scoreView = findViewById(R.id.team_two_score);
-        scoreView.setText(String.valueOf(score));
+        teamTwoScoreView.setText(String.valueOf(score));
     }
 
     // Add 3 Points for Team Two
@@ -76,14 +86,12 @@ public class MainActivity extends AppCompatActivity {
 
     // Display Win/Loss message for Team One
     public void displayWinnerForTeamOne(String message) {
-        TextView winnerView = findViewById(R.id.team_one_win_lose_msg);
-        winnerView.setText(message);
+        teamOneGameOverMsg.setText(message);
     }
 
     // Display Win/Loss message for Team Two
     public void displayWinnerForTeamTwo(String message) {
-        TextView winnerView = findViewById(R.id.team_two_win_lose_msg);
-        winnerView.setText(message);
+        teamTwoGameOverMsg.setText(message);
     }
 
     public void gameOver(View v) {
