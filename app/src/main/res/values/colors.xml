@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="transparent_white">#b4ffffff</color>
+    <color name="teal_green_header">#2f7869</color>
+    <color name="lighter_teal_green_sub_header_btn">#378a79</color>
+    <color name="burnt_orange">#b73e0a</color>
 </resources>

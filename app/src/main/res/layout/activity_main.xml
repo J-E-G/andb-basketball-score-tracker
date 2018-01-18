@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#2f7869"
+                android:background="@color/teal_green_header"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/score_tracker"
@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#378a79"
+                android:background="@color/lighter_teal_green_sub_header_btn"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/game_name"
@@ -60,7 +60,7 @@
                     android:gravity="center_horizontal"
                     android:padding="4dp"
                     android:text="@string/win_lose_message"
-                    android:textColor="#b73e0a"
+                    android:textColor="@color/burnt_orange"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -103,7 +103,6 @@
                     android:layout_margin="10dp"
                     android:onClick="addTwoPointsForTeamOne"
                     android:text="@string/add_2_points_button"
-
                     android:textColor="@color/transparent_white"
                     android:textSize="15sp" />
 
@@ -121,7 +120,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:background="#b73e0a"
+                    android:background="@color/burnt_orange"
                     android:onClick="resetScore"
                     android:text="@string/reset_button"
                     android:textColor="@color/transparent_white"
@@ -133,7 +132,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="95dp"
                 android:layout_marginTop="95dp"
-                android:background="#b73e0a" />
+                android:background="@color/burnt_orange" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -207,7 +206,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
-                    android:background="#b73e0a"
+                    android:background="@color/burnt_orange"
                     android:onClick="gameOver"
                     android:text="@string/game_over_button"
                     android:textColor="@color/transparent_white"
