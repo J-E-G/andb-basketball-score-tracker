@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_padding">3dp</dimen>
+    <dimen name="header_text_size">35sp</dimen>
+    <dimen name="sub_header_text_size">25sp</dimen>
+    <dimen name="horizontal_line_margin">95dp</dimen>
+    <dimen name="horizontal_line_width">1dp</dimen>
+    <dimen name="btn_text_size">15sp</dimen>
+    <dimen name="btn_margin">15dp</dimen>
+    <dimen name="point_btn_height">55dp</dimen>
+    <dimen name="team_name_txt_size">20sp</dimen>
+    <dimen name="win_loss_draw_txt">20sp</dimen>
+    <dimen name="team_img_height">60dp</dimen>
+    <dimen name="team_score">65sp</dimen>
+    <dimen name="alternate_btn_margin">20dp</dimen>
+    <dimen name="layout_top_margin">100dp</dimen>
+    <dimen name="layout_column_width">0dp</dimen>
+    <dimen name="layout_weight">1</dimen>
+</resources>
