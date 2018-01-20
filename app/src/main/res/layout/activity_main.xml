@@ -26,16 +26,6 @@
                 android:textColor="@color/transparent_white"
                 android:textSize="@dimen/header_text_size"
                 android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/lighter_teal_green_sub_header_btn"
-                android:gravity="center_horizontal"
-                android:padding="@dimen/text_padding"
-                android:text="@string/game_name"
-                android:textColor="@color/transparent_white"
-                android:textSize="@dimen/sub_header_text_size" />
         </LinearLayout>
 
 
@@ -68,7 +58,7 @@
                     android:gravity="center_horizontal"
                     android:padding="@dimen/text_padding"
                     android:text="@string/team_one_name"
-                    android:textColor="#3d9d89"
+                    android:textColor="@color/team_name_teal"
                     android:textSize="@dimen/team_name_txt_size"
                     android:textStyle="bold" />
 
@@ -93,7 +83,8 @@
                     android:onClick="addThreePointsForTeamOne"
                     android:text="@string/add_3_points_button"
                     android:textColor="@color/transparent_white"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:textSize="@dimen/btn_text_size"
+                    android:id="@+id/three_points_team_one_btn"/>
 
                 <Button
                     android:layout_width="match_parent"
@@ -102,7 +93,8 @@
                     android:onClick="addTwoPointsForTeamOne"
                     android:text="@string/add_2_points_button"
                     android:textColor="@color/transparent_white"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:textSize="@dimen/btn_text_size"
+                    android:id="@+id/two_points_team_one_btn"/>
 
                 <Button
                     android:layout_width="match_parent"
@@ -111,7 +103,8 @@
                     android:onClick="addOnePointForTeamOne"
                     android:text="@string/add_free_throw_button"
                     android:textColor="@color/transparent_white"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:textSize="@dimen/btn_text_size"
+                    android:id="@+id/one_point_team_one_btn"/>
 
                 <Button
                     android:layout_width="match_parent"
@@ -121,7 +114,8 @@
                     android:onClick="resetScore"
                     android:text="@string/reset_button"
                     android:textColor="@color/transparent_white"
-                    android:textSize="@dimen/btn_text_size" />
+                    android:textSize="@dimen/btn_text_size"
+                    android:id="@+id/reset_score_btn"/>
             </LinearLayout>
 
             <View
@@ -144,7 +138,7 @@
                     android:gravity="center_horizontal"
                     android:padding="@dimen/text_padding"
                     android:text="@string/win_lose_message"
-                    android:textColor="#b73e0a"
+                    android:textColor="@color/burnt_orange"
                     android:textSize="@dimen/win_loss_draw_txt"
                     android:textStyle="bold" />
 
@@ -154,7 +148,7 @@
                     android:gravity="center_horizontal"
                     android:padding="@dimen/text_padding"
                     android:text="@string/team_two_name"
-                    android:textColor="#3d9d89"
+                    android:textColor="@color/team_name_teal"
                     android:textSize="@dimen/team_name_txt_size"
                     android:textStyle="bold" />
 

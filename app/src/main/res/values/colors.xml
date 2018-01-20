@@ -6,5 +6,7 @@
     <color name="transparent_white">#b4ffffff</color>
     <color name="teal_green_header">#2f7869</color>
     <color name="lighter_teal_green_sub_header_btn">#378a79</color>
-    <color name="burnt_orange">#b73e0a</color>
+    <color name="burnt_orange">#f46a2f</color>
+    <color name="gray">#adadad</color>
+    <color name="team_name_teal">#3d9d89</color>
 </resources>
